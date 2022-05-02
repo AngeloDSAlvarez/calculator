@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+body{
+    background: #1C344C;
+}
+#containerPrincipal{
+    width: 350px;
+
+    margin: 50px auto;
+    border: 1px solid #C3C3C3;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2em #C3C3C3;
+
+    text-align: left;
+}
+
+#visorNumeros{
+    display: block;
+    width: 95%;
+    height: 60px;
+    border: 1px solid #C3C3C3;
+    border-radius: 3px;
+    margin: 3% auto;
+
+    font-size: 50px;
+    text-align: right;
+    padding: 0 5px;
+}
+.linhasCalculadora{
+    width: 95%;
+    height: 50px;
+    margin: 15px auto;
+}
+.botoes, .botoesNumeros, #botaoIgual{
+    display: inline-block;
+    position: static;
+    width: 23.9%;
+    height: 100%;
+    
+    font-size: 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+}
+#botaoIgual{
+    background: #A6CCF0;
+    color: #000;
+    font-weight: bold;
+}
+.botoes{
+    background: #39648D;
+}
+.botoesNumeros{
+    background: #5285B5;
+}
+#botaoHistorico{
+    margin-top: 10px;
+    margin-left: 2.5%;
+    width: 80px;
+    height: 30px;
+    padding: 2px;
+    border: none;
+    border-radius: 3px;
+    background: #39648D;
+    color: #fff;
+}
+#containerHistorico{
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#historico{
+    position: absolute;
+    top: 5px;
+    padding: 3px;
+    color: #fff;
+    background: #5285B5;
+    border: 1px solid #C3C3C3;
+    border-radius: 3px;
+}

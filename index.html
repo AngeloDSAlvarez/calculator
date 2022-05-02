@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="./estilos/style.css">
+        <script src="./javascript/script.js"></script>
+    </head>
+
+    <body>
+        <div id="containerPrincipal">
+            <button onclick="mostrarHistorico()" id="botaoHistorico">Histórico</button>
+            <div id="containerHistorico">
+                <table id="historico">
+                    
+                </table>
+            </div>
+            <input type="textarea" id="visorNumeros" value="0" disabled>
+
+            <div class="linhasCalculadora">
+                <button class="botoes" onclick="enviarDados('(')">(</button>
+                <button class="botoes" onclick="enviarDados(')')">)</button>
+                <button class="botoes" onclick="limparContaAtual()">AC</button>
+                <button class="botoes" onclick="apagarUltima()">Apagar</button>
+            </div>
+            <div class="linhasCalculadora">
+                <button class="botoesNumeros" onclick="enviarDados('7')">7</button>
+                <button class="botoesNumeros" onclick="enviarDados('8')">8</button>
+                <button class="botoesNumeros" onclick="enviarDados('9')">9</button>
+                <button class="botoes" onclick="enviarDados('/')">÷</button>
+            </div>
+            <div class="linhasCalculadora">
+                <button class="botoesNumeros" onclick="enviarDados('4')">4</button>
+                <button class="botoesNumeros" onclick="enviarDados('5')">5</button>
+                <button class="botoesNumeros" onclick="enviarDados('6')">6</button>
+                <button class="botoes" onclick="enviarDados('*')">x</button>
+            </div>
+            <div class="linhasCalculadora">
+                <button class="botoesNumeros" onclick="enviarDados('1')">1</button>
+                <button class="botoesNumeros" onclick="enviarDados('2')">2</button>
+                <button class="botoesNumeros" onclick="enviarDados('3')">3</button>
+                <button class="botoes" onclick="enviarDados('-')">-</button>
+            </div>
+            <div class="linhasCalculadora">
+                <button class="botoesNumeros" onclick="enviarDados('0')">0</button>
+                <button class="botoesNumeros" onclick="enviarDados('.')">.</button>
+                <button id="botaoIgual" onclick="resolver()">=</button>
+                <button class="botoes" onclick="enviarDados('+')">+</button>
+            </div>
+        </div>
+    </body>
+
+</html>
